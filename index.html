@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>shaders 🔥</title>
-
-  <!-- Embed preview stuff -->
+  <meta charset="UTF-8" />
   <meta property="og:title" content="shaders 🔥">
   <meta property="og:description" content="custom domain flex 😋">
-  <meta property="og:image" content="https://github.com/TheHotSsummer578/your-mom/raw/main/assets/pfp.png">
+  <meta property="og:image" content="https://github.com/TheHotSsummer578/your-mom/blob/main/assets/pfp.png?raw=true">
+  <title>Shaders.cc</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      height: 200vh;
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding-bottom: 100px;
+    }
 
-  <!-- Makes the icon in browser tab less ugly -->
-  <link rel="icon" href="https://github.com/TheHotSsummer578/your-mom/raw/main/assets/pfp.png" type="image/png">
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      background: crimson;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: red;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 9999;
+    }
+  </style>
 </head>
 <body>
+
+  <button onclick="prank()">click me for 10b robux 😱</button>
+
+  <div id="overlay">🚨 POLICE ARE ON THEIR WAY 🚨</div>
+
+  <script>
+    function prank() {
+      const overlay = document.getElementById('overlay');
+      overlay.style.display = 'flex';
+
+      setTimeout(() => {
+        overlay.innerHTML = "jk lol 😭😭 you're safe... for now";
+        overlay.style.backgroundColor = '#222';
+      }, 2500);
+    }
+  </script>
+
 </body>
 </html>
