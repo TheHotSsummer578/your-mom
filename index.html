@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- DISCORD EMBED -->
+  <meta property="og:title" content="shaders.cc 🔥" />
+  <meta property="og:description" content="custom domain flex 😋" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/TheHotSsummer578/your-mom/main/assets/pfp.png" />
+  <meta property="og:url" content="https://shaders.cc" />
+  <meta name="theme-color" content="#ff55ff" />
+
+  <title>shaders.cc</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ff55ff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #jumpscare {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: black;
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    #jumpscare img {
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to shaders.cc 😎</h1>
+  <p>Scroll down and click the button for a surprise 👀</p>
+  <button onclick="activate()">Click me 🔥</button>
+
+  <div id="jumpscare">
+    <audio id="scream" src="https://raw.githubusercontent.com/TheHotSsummer578/your-mom/refs/heads/main/assets/Loud%20scream%20sfx%20(Earrape%20Warning).mp3" autoplay></audio>
+    <img src="https://github.com/TheHotSsummer578/your-mom/blob/main/assets/il_600x600.668713821_950i.jpeg?raw=true" alt="BOO!">
+  </div>
+
+  <script>
+    function activate() {
+      setTimeout(() => {
+        document.getElementById("jumpscare").style.display = "flex";
+        document.getElementById("scream").play();
+      }, 2500); // delay for suspense 😈
+    }
+  </script>
+</body>
+</html>
