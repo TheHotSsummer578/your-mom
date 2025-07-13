@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spotify-card {
+  background: #222;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 192, 203, 0.3);
+  text-align: center;
+  width: 300px;
+}
+
+.song-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #f8cdda;
+}
+
+.song-info p {
+  margin: 5px 0 15px;
+  color: #aaa;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
